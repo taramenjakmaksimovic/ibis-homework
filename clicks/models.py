@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class Clicks(models.Model):
     click_id = models.CharField(max_length=128)
     timestamp = models.IntegerField()
