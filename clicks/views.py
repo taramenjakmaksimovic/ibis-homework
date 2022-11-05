@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.http import HttpResponse
+from clicks.models import Clicks
 
-# Create your views here.
+
+def index(request, campaign):
+    return HttpResponse(Clicks.objects.filter(campaign=campaign).count())
+
