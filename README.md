@@ -22,6 +22,7 @@ date. Tests cover the API route.
 This project was written in PyCharm IDE.
 ## Running this project 
 ``` 
+pip3 install Django psycopg2-binary requests
 python3 manage.py runserver 8000
 ``` 
 
